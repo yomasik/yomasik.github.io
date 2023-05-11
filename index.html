@@ -5,8 +5,261 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김민식 ｜ 포트폴리오</title>
+    <!-- css -->
+    <link href="css/font.css" rel="stylesheet" type="text/css" />
+    <link href="css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <!-- js -->
+    <script defer src="js/ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 </head>
 <body>
-    <h3>안녕하세요 김민식입니다.</h3>
+    <div class="wrap">
+        <header class="header">
+            <div class="header__inner ">
+                <a href="javascript:;" class="header__title">Minsik's Web Portfolio</a>
+            </div>
+        </header>
+        <section class="about ">
+            <div class="about__inner inner">
+                <h2 class="about__title box2">
+                    구축&nbsp;&middot;&nbsp;유지보수&nbsp;&middot;&nbsp;개선 프로젝트 경험을 바탕으로 성장하는<br />웹퍼블리셔 김민식입니다.
+                </h2>
+                <ul class="about__sub-title">
+                    <li>Web Publishing </li>
+                    <li>UI&middot;UX Design</li>
+                    <li>UI & Markup Dev.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="hobby">
+            <article class="video">
+                <video src="images/video_hobby.mp4" type="video/mp4" autoplay loop muted></video>
+            </article>
+        </section>
+        <section class="work ">
+            <article class="skill">
+                <div class="skill__inner inner">
+                    <div class="skill__title">
+                        <h3 class="title">
+                            제가 제일<br />
+                            <strong>잘하는 일들이에요 </strong>
+                        </h3>
+                        <div class="skill__tools">
+                            <div class="tools__list">
+                                <strong class="tools__list-title">Web Publishing</strong>
+                                <ul class="tools__list-item">
+                                    <li class="tool html"><span class="hidden">HTML</span></li>
+                                    <li class="tool css"><span class="hidden">CSS</span></li>
+                                    <li class="tool vscode"><span class="hidden">VSCODE</span></li>
+                                </ul>
+                            </div>
+                            <div class="tools__list">
+                                <strong class="tools__list-title">Design</strong>
+                                <ul class="tools__list-item">
+                                    <li class="tool figma"><span class="hidden">Figma</span></li>
+                                    <li class="tool xd"><span class="hidden">Xd</span></li>
+                                    <li class="tool ai"><span class="hidden">Illustrator</span></li>
+                                    <li class="tool ps"><span class="hidden">Photoshop</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="skill__list">
+                        <li class="skill-list__item">
+                            <strong class="skill-list__name">UI Development</strong>
+                            <p class="skill-list__desc">컴포넌트 단위의 유지보수를 고려한 코드 작성, 최적화된 마크업에 관심이 많습니다.<br />
+                                협업을 위한 가이드 제작 등 탄탄한 업무 프로세스를 지향합니다.</p>
+                        </li>
+                        <li class="skill-list__item">
+                            <strong class="skill-list__name">Basic skill</strong>
+                            <p class="skill-list__desc">HTML과 CSS에 빠삭하며, Javascript를 이용하여 동적인 페이지를 만들어냅니다. <br />
+                                그리고 rem 같은 상대 단위와 미디어쿼리 등을 사용하여 반응형 웹을 제작합니다.</p>
+                        </li>
+                        <li class="skill-list__item">
+                            <strong class="skill-list__name">Co-work</strong>
+                            <p class="skill-list__desc">같이 일하는 동료들과 항상 원활한 협업을 끌어내려고 노력합니다.<br />
+                                서로의 의도를 이해하고 존중하며 '함께' 더 나은 결과물을 만듭니다.</p>
+                        </li>
+                        <li class="skill-list__item">
+                            <strong class="skill-list__name">Steady study</strong>
+                            <p class="skill-list__desc">누구에게나 읽기 쉬운 코드를 잘 그려내기 위한 방법들을 계속 연구중입니다. <br />
+                                또한 Sass, Git, Figma 등 생산성과 협업을 위한 지식을 배우고 꾸준히 공부합니다.</p>
+                        </li>
+                        <li class="skill-list__item">
+                            <strong class="skill-list__name">For Users</strong>
+                            <p class="skill-list__desc">제가 만든 결과물이 사용자 입장에서는 어떻게 보여질지 항상 생각하고 고민하는 걸 좋아해요.<br />
+                                웹접근성을 준수하고 반응형, 인터랙션 등 사용하기 쉽고 즐거운 UX를 만드는 데 관심이 많습니다.</p>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="project">
+                <div class="project__inner inner">
+                    <div class="project__title">
+                        <h3 class="title">
+                            최근 작업한<br />
+                            <strong>프로젝트들이에요!</strong>
+                        </h3>
+                    </div>
+                    <ul class="project__list">
+                        <li class="project__list-item">
+                            <a href="javascript:;" class="project__img">
+                                <img src="images/img_project01.png" alt="">
+                            </a>
+                            <span class="project__cateogry">고도화</span>
+                            <strong class="project__name">하나카드 1Qpay 고도화</strong>
+                            <span class="project__desc">디자인 100% / 퍼블리싱 100%</span>
+                        </li>
+                        <li class="project__list-item">
+                            <a href="javascript:;" class="project__img">
+                                <img src="images/img_project02.png" alt="">
+                            </a>
+                            <span class="project__cateogry">구축</span>
+                            <strong class="project__name">특허청 모바일 전자고지 시스템 구축</strong>
+                            <span class="project__desc">디자인 50% / 퍼블리싱 100%</span>
+                        </li>
+                        <li class="project__list-item">
+                            <a href="javascript:;" class="project__img">
+                                <img src="images/img_project03.png" alt="">
+                            </a>
+                            <span class="project__cateogry">구축</span>
+                            <strong class="project__name">KT공인전자문서센터 구축</strong>
+                            <span class="project__desc">디자인 100% / 퍼블리싱 100%</span>
+                        </li>
+                        <li class="project__list-item">
+                            <a href="javascript:;" class="project__img">
+                                <img src="images/img_project04.png" alt="">
+                            </a>
+                            <span class="project__cateogry">고도화</span>
+                            <strong class="project__name">게임물관리위원회 등급분류시스템 고도화</strong>
+                            <span class="project__desc">디자인 80% / 퍼블리싱 80%</span>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            <article class="career">
+                <div class="career__inner inner">
+                    <div class="career__title">
+                        <h3 class="title">
+                            그동안<br />
+                            <strong>다양한 경험을  했어요</strong>
+                        </h3>
+                        <a href="https://abyssinian-authority-d30.notion.site/in-5287e46f8bbf4da69de29b8b2e01df92" target="_blank" class="btn-line ">
+                            <span class="btn-text">경력기술서(링크)</span>
+                        </a>
+                    </div>
+                    <ul class="career__list">
+                        <li class="career__list-item">                            
+                            <strong class="year">2023</strong>
+                            <ul class="career__item-detail">
+                                <li>
+                                    <strong class="career__project-name">한국인터넷진흥원 - 차세대 ISMS-P 디지털 플랫폼 구축</strong>
+                                    <p class="career__project-desc">디자인 50% / 퍼블리싱 50% / 2023.03~2023.04</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">포뎁스 - 자사 홈페이지 리뉴얼</strong>
+                                    <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2023.02~2022.03</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="career__list-item">                            
+                            <strong class="year">2022</strong>
+                            <ul class="career__item-detail">
+                                <li>
+                                    <strong class="career__project-name">하나카드 -  1QPay 어플 고도화</strong>
+                                    <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2022.07~2022.11</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">해양경찰청 - 수상레저종합정보시스템 고도화 구축 사업</strong>
+                                    <p class="career__project-desc">디자인 20% / 퍼블리싱 100% / 2022.10</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">서민금융진흥원 - 업무시스템 개선 및 구축</strong>
+                                    <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2022.06~2022.09</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">신용보증기금 - 모바일 전자고지 시스템 구축</strong>
+                                    <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2022.05~2022.06</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">인천시청 - 모바일기반 민방위교육훈련통지서 전자고지 서비스 용역</strong>
+                                    <p class="career__project-desc">디자인 20% / 퍼블리싱 100% / 2022.04~2022.05</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">게임물관리위원회 - 등급분류시스템 고도화</strong>
+                                    <p class="career__project-desc">디자인 80% / 퍼블리싱 80% / 2022.01~2022.02</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">한국인터넷진흥원 - 개인정보보호 지원시스템 운영 및 기능강화</strong>
+                                    <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2022.02~2022.04</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="career__list-item">                            
+                            <strong class="year">2021</strong>
+                            <ul class="career__item-detail">
+                                <li>
+                                    <strong class="career__project-name">한국전기안전공사 - 일반용전기설비 점검업무 모바일 전자안내 발송시스템 구축</strong>
+                                    <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2021.11~2022.01</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">대한적십자사 - 모바일 전자고지 및 납부 시스템 구축</strong>
+                                    <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2021.09~2021.12</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">충청북도 - 충청북도 통합 전자고지 서비스 플랫폼 구축</strong>
+                                    <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2021.09~2021.12</p>
+                                </li>                                
+                                <li>
+                                    <strong class="career__project-name">공무원연금공단 - 모바일 전자고지 안내 서비스 용역</strong>
+                                    <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2021.10~2021.11</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">특허청 - 특허청 모바일 전자고지 시스템 구축 사업</strong>
+                                    <p class="career__project-desc">디자인 50% / 퍼블리싱 100% / 2021.09~2021.10</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">KT- 공인전자문서센터</strong>
+                                    <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2021.06~2021.09</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">한국인터넷진흥원 - 차세대 웹 기술지원센터 운영</strong>
+                                    <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2021.04~2021.06</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">한국인터넷진흥원 - 개인정보보호 지원시스템 운영 및 기능강화</strong>
+                                    <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2021.01~2021.12</p>
+                                </li>
+                            </ul>
+                        </li> 
+                        <li class="career__list-item">                            
+                            <strong class="year">2020</strong>
+                            <ul class="career__item-detail">
+                                <li>
+                                    <strong class="career__project-name">국민건강보험공단 - 디지털 안내고지서비스 사업</strong>
+                                    <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2020.12~2021.03</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">우리은행 - 디지털 우편발송(전자고지) 시스템 구축</strong>
+                                    <p class="career__project-desc">퍼블리싱 100% / 2020.10~2021.02</p>
+                                </li>
+                                <li>
+                                    <strong class="career__project-name">MOIBA - SMAC 홈페이지 운영유지보수</strong>
+                                    <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2020.07~2021.01</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+        <footer class="footer">
+            <div class="footer__inner">
+                <div class="footer__copyright">Copyright © 2023 KIMMINSIK, All Right Reserved.</div>
+            </div>
+        </footer>
+    </div>
+
 </body>
 </html>
