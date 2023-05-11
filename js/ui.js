@@ -36,3 +36,36 @@ window.addEventListener('scroll', function(){
     })
   };
   
+
+  //animation
+
+	$(window).on('scroll', function () {
+		var bodyScroll = $(document).scrollTop();
+		if (bodyScroll === 0) {
+			$("*").removeClass('subOn');
+		}
+	});
+
+	var $section = $('.ani'),
+		bodyScroll, windowHeight;
+
+	function sectionAni() {
+		bodyScroll = $(document).scrollTop(),
+			windowHeight = $(window).height() / 1;
+
+		$section.each(function () {
+			if (bodyScroll >= $(this).offset().top + 80 - windowHeight && bodyScroll < $(this).offset().top + $(this).height()) {
+				$(this).addClass('on');
+				$(this).addClass('subOn');
+			}
+			else {
+				$(this).removeClass('on');
+			}
+		});
+	}
+	$(function () {
+		sectionAni();
+	});
+	$(window).on('scroll', function () {
+		sectionAni();
+	});

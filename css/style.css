@@ -438,6 +438,7 @@ display: none;
     position: relative;
     margin-top: 120px;
 }
+
 .project__list .project__list-item .project__img{
     display: block;
     width: 515px;
@@ -475,6 +476,9 @@ display: none;
     font-size: 16px;
     color: #999;
 }
+.project__list .project__list-item{
+    opacity: 0;
+}
 .project__list .project__list-item:nth-child(1){
     position: absolute;
     top:0;
@@ -495,7 +499,14 @@ display: none;
     top:1075px;
     right: 160px;
 }
-
+.project__list .project__list-item:nth-child(2n).subOn{
+     animation: ani_2 .8s .3s;
+    animation-fill-mode: both;
+}
+.project__list .project__list-item:nth-child(2n-1).subOn{
+    animation: ani_1 .8s .3s;
+   animation-fill-mode: both;
+}
 /* career */
 .career {
     width: 100%;

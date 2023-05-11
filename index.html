@@ -9,7 +9,10 @@
     <link href="css/font.css" rel="stylesheet" type="text/css" />
     <link href="css/reset.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/animation.css" rel="stylesheet" type="text/css" />
     <!-- js -->
+    <script defer src="js/jquery-3.6.0.min.js"></script>
+    <script defer src="js/jquery-migrate-1.4.1.min.js"></script>
     <script defer src="js/ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 </head>
@@ -95,7 +98,7 @@
                 </div>
             </article>
             <article class="project">
-                <div class="project__inner inner">
+                <div class="project__inner inner ">
                     <div class="project__title">
                         <h3 class="title">
                             최근 작업한<br />
@@ -103,7 +106,7 @@
                         </h3>
                     </div>
                     <ul class="project__list">
-                        <li class="project__list-item">
+                        <li class="project__list-item ani">
                             <a href="javascript:;" class="project__img">
                                 <img src="images/img_project01.png" alt="">
                             </a>
@@ -111,7 +114,7 @@
                             <strong class="project__name">하나카드 1Qpay 고도화</strong>
                             <span class="project__desc">디자인 100% / 퍼블리싱 100%</span>
                         </li>
-                        <li class="project__list-item">
+                        <li class="project__list-item ani">
                             <a href="javascript:;" class="project__img">
                                 <img src="images/img_project02.png" alt="">
                             </a>
@@ -119,7 +122,7 @@
                             <strong class="project__name">특허청 모바일 전자고지 시스템 구축</strong>
                             <span class="project__desc">디자인 50% / 퍼블리싱 100%</span>
                         </li>
-                        <li class="project__list-item">
+                        <li class="project__list-item ani">
                             <a href="javascript:;" class="project__img">
                                 <img src="images/img_project03.png" alt="">
                             </a>
@@ -127,7 +130,7 @@
                             <strong class="project__name">KT공인전자문서센터 구축</strong>
                             <span class="project__desc">디자인 100% / 퍼블리싱 100%</span>
                         </li>
-                        <li class="project__list-item">
+                        <li class="project__list-item ani">
                             <a href="javascript:;" class="project__img">
                                 <img src="images/img_project04.png" alt="">
                             </a>
@@ -143,14 +146,15 @@
                     <div class="career__title">
                         <h3 class="title">
                             그동안<br />
-                            <strong>다양한 경험을  했어요</strong>
+                            <strong>다양한 경험을 했어요</strong>
                         </h3>
-                        <a href="https://abyssinian-authority-d30.notion.site/in-5287e46f8bbf4da69de29b8b2e01df92" target="_blank" class="btn-line ">
+                        <a href="https://abyssinian-authority-d30.notion.site/in-5287e46f8bbf4da69de29b8b2e01df92"
+                            target="_blank" class="btn-line ">
                             <span class="btn-text">경력기술서(링크)</span>
                         </a>
                     </div>
                     <ul class="career__list">
-                        <li class="career__list-item">                            
+                        <li class="career__list-item">
                             <strong class="year">2023</strong>
                             <ul class="career__item-detail">
                                 <li>
@@ -163,11 +167,11 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="career__list-item">                            
+                        <li class="career__list-item">
                             <strong class="year">2022</strong>
                             <ul class="career__item-detail">
                                 <li>
-                                    <strong class="career__project-name">하나카드 -  1QPay 어플 고도화</strong>
+                                    <strong class="career__project-name">하나카드 - 1QPay 어플 고도화</strong>
                                     <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2022.07~2022.11</p>
                                 </li>
                                 <li>
@@ -196,11 +200,12 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="career__list-item">                            
+                        <li class="career__list-item">
                             <strong class="year">2021</strong>
                             <ul class="career__item-detail">
                                 <li>
-                                    <strong class="career__project-name">한국전기안전공사 - 일반용전기설비 점검업무 모바일 전자안내 발송시스템 구축</strong>
+                                    <strong class="career__project-name">한국전기안전공사 - 일반용전기설비 점검업무 모바일 전자안내 발송시스템
+                                        구축</strong>
                                     <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2021.11~2022.01</p>
                                 </li>
                                 <li>
@@ -210,7 +215,7 @@
                                 <li>
                                     <strong class="career__project-name">충청북도 - 충청북도 통합 전자고지 서비스 플랫폼 구축</strong>
                                     <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2021.09~2021.12</p>
-                                </li>                                
+                                </li>
                                 <li>
                                     <strong class="career__project-name">공무원연금공단 - 모바일 전자고지 안내 서비스 용역</strong>
                                     <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2021.10~2021.11</p>
@@ -232,8 +237,8 @@
                                     <p class="career__project-desc">디자인 100% / 퍼블리싱 100% / 2021.01~2021.12</p>
                                 </li>
                             </ul>
-                        </li> 
-                        <li class="career__list-item">                            
+                        </li>
+                        <li class="career__list-item">
                             <strong class="year">2020</strong>
                             <ul class="career__item-detail">
                                 <li>
